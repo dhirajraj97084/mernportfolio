@@ -3,39 +3,53 @@ import { FaCode, FaDatabase, FaServer, FaLaptop, FaMobile, FaGraduationCap, FaBr
 
 const About: React.FC = () => {
   const skills = [
-    { icon: <FaCode />, name: 'Frontend', items: ['React.js', 'JavaScript', 'TypeScript', 'HTML/CSS', 'Redux'] },
-    { icon: <FaServer />, name: 'Backend', items: ['Node.js', 'Express.js', 'REST APIs', 'GraphQL', 'Authentication'] },
-    { icon: <FaDatabase />, name: 'Database', items: ['MongoDB', 'Mongoose', 'SQL', 'Firebase', 'Data Modeling'] },
-    { icon: <FaLaptop />, name: 'Tools', items: ['Git', 'Webpack', 'npm/yarn', 'Docker', 'CI/CD'] },
-    { icon: <FaMobile />, name: 'Mobile', items: ['React Native', 'Responsive Design', 'PWA', 'App Optimization'] }
-  ];
+      { icon: <FaCode />, name: 'Frontend', items: ['React.js', 'JavaScript', 'Tailwindcss', 'HTML/CSS', 'Redux'] },
+      { icon: <FaServer />, name: 'Backend', items: ['Node.js', 'Express.js', 'REST APIs','Authentication'] },
+      { icon: <FaDatabase />, name: 'Database', items: ['MongoDB', 'Mongoose', 'SQL', 'Firebase','Data Modeling'] },
+      { icon: <FaLaptop />, name: 'Tools', items: ['Git','npm/yarn','GitHub','Vercel'] },
+      
+    ];
 
   const qualifications = [
-    { 
-      type: 'education',
-      icon: <FaGraduationCap />, 
-      title: 'Master of Computer Science', 
-      organization: 'Technical University',
-      period: '2019 - 2021',
-      description: 'Specialized in Web Development and Advanced Algorithms' 
-    },
-    { 
-      type: 'work',
-      icon: <FaBriefcase />,
-      title: 'Senior MERN Stack Developer', 
-      organization: 'Tech Solutions Inc.',
-      period: '2021 - Present',
-      description: 'Leading development of enterprise web applications' 
-    },
-    { 
-      type: 'work',
-      icon: <FaBriefcase />,
-      title: 'Full Stack Developer', 
-      organization: 'Web Dev Agency',
-      period: '2019 - 2021',
-      description: 'Built scalable web applications for various clients' 
-    }
-  ];
+      { 
+        type: 'education',
+        icon: <FaGraduationCap />, 
+        title: 'Bachelor of Computer Science', 
+        organization: 'Uttaranchal University Dehradun =>( 9.11 cgpa )',
+        period: '2022 - 2026',
+        description: 'Graduated with honors, focus on software engineering' 
+      },
+      // { 
+      //   type: 'work',
+      //   icon: <FaBriefcase />,
+      //   title: 'Junior MERN Stack Developer', 
+      //   organization: 'digiswarm company Dehradun',
+      //   period: '2025 - Present',
+      //   description: 'Leading development of enterprise web applications' 
+      // },
+      // { 
+      //   type: 'work',
+      //   icon: <FaBriefcase />,
+      //   title: 'Frontend Developer', 
+      //   organization: 'digiswarm company',
+      //   period: '2024 - 2025',
+      //   description: 'Built scalable web applications for various clients' 
+      // },
+      { 
+        type: 'education',
+        icon: <FaGraduationCap />, 
+        title: 'Higher Secondary School(12th)', 
+        organization: 'M.S. College Motihari(Bihar)=>( 81.4 % Marks )',
+        period: '2020 - 2022', 
+      },
+      { 
+        type: 'education',
+        icon: <FaGraduationCap />, 
+        title: 'Secondary School(10th)', 
+        organization: 'Zila School Motihari(Bihar)=>( 79.4 % Marks )',
+        period: '2018 - 2019', 
+      }
+    ];
 
   const academics = [
     {
