@@ -12,6 +12,8 @@ import About from './pages/About';
 import Projects from './pages/Projects';
 import Contact from './pages/Contact';
 
+import { Toaster } from 'react-hot-toast';
+
 const App: React.FC = () => {
   return (
     <div className="flex flex-col min-h-screen">
@@ -26,6 +28,7 @@ const App: React.FC = () => {
       </main>
       <ScrollToTop />
       <Footer />
+      <Toaster/>
     </div>
   );
 };
