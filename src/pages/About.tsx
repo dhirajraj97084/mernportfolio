@@ -1,12 +1,14 @@
 import React from 'react';
 import { FaCode, FaDatabase, FaServer, FaLaptop, FaMobile, FaGraduationCap, FaBriefcase, FaAward } from 'react-icons/fa';
+import { FcTreeStructure } from "react-icons/fc";
 
 const About: React.FC = () => {
   const skills = [
-      { icon: <FaCode />, name: 'Frontend', items: ['React.js', 'JavaScript', 'Tailwindcss', 'HTML/CSS', 'Redux'] },
-      { icon: <FaServer />, name: 'Backend', items: ['Node.js', 'Express.js', 'REST APIs','Authentication'] },
-      { icon: <FaDatabase />, name: 'Database', items: ['MongoDB', 'Mongoose', 'SQL', 'Firebase','Data Modeling'] },
-      { icon: <FaLaptop />, name: 'Tools', items: ['Git','npm/yarn','GitHub','Vercel'] },
+      { icon: <FaCode />, name: 'Frontend Development', items: ['React.js', 'JavaScript', 'Tailwindcss', 'HTML/CSS', 'Redux'] },
+      { icon: <FaServer />, name: 'Backend Development', items: ['Node.js', 'Express.js', 'REST APIs','Authentication'] },
+      { icon: <FaDatabase />, name: 'Database Development', items: ['MongoDB', 'Mongoose', 'SQL', 'Firebase','Data Modeling'] },
+      { icon: <FaLaptop />, name: 'Tools Development', items: ['Git','npm/yarn','GitHub','Vercel'] },
+      { icon: <FcTreeStructure />, name: 'Data Structure', items: ['C++', 'Opps','STL', 'Problem  solving'] },
       
     ];
 
@@ -113,7 +115,7 @@ const About: React.FC = () => {
                 <div className="text-blue-600 mb-4 text-4xl">
                   {skill.icon}
                 </div>
-                <h3 className="text-xl font-bold mb-4">{skill.name} Development</h3>
+                <h3 className="text-xl font-bold mb-4">{skill.name} </h3>
                 <ul className="space-y-2">
                   {skill.items.map((item, i) => (
                     <li key={i} className="flex items-center">
@@ -175,7 +177,7 @@ const About: React.FC = () => {
       </section>
 
       {/* Academics Section */}
-      <section id="academics" className="py-20">
+      {/* <section id="academics" className="py-20">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold mb-4 text-blue-800" data-aos="fade-up">Academic Excellence</h2>
@@ -208,7 +210,7 @@ const About: React.FC = () => {
             ))}
           </div>
         </div>
-      </section>
+      </section> */}
     </div>
   );
 };

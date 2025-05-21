@@ -1,15 +1,17 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { FaGithub, FaLinkedin, FaTwitter, FaArrowDown, FaCode, FaDatabase, FaServer, FaLaptop, FaMobile, FaGraduationCap, FaBriefcase } from 'react-icons/fa';
+import { FcTreeStructure } from "react-icons/fc";
 
 const Home: React.FC = () => {
   const skills = [
-    { icon: <FaCode />, name: 'Frontend', items: ['React.js', 'JavaScript', 'Tailwindcss', 'HTML/CSS', 'Redux'] },
-    { icon: <FaServer />, name: 'Backend', items: ['Node.js', 'Express.js', 'REST APIs', 'Authentication'] },
-    { icon: <FaDatabase />, name: 'Database', items: ['MongoDB', 'Mongoose', 'SQL', 'Firebase', 'Data Modeling'] },
-    { icon: <FaLaptop />, name: 'Tools', items: ['Git', 'npm/yarn', 'GitHub', 'Vercel'] },
-
-  ];
+        { icon: <FaCode />, name: 'Frontend Development', items: ['React.js', 'JavaScript', 'Tailwindcss', 'HTML/CSS', 'Redux'] },
+        { icon: <FaServer />, name: 'Backend Development', items: ['Node.js', 'Express.js', 'REST APIs','Authentication'] },
+        { icon: <FaDatabase />, name: 'Database Development', items: ['MongoDB', 'Mongoose', 'SQL', 'Firebase','Data Modeling'] },
+        { icon: <FaLaptop />, name: 'Tools Development', items: ['Git','npm/yarn','GitHub','Vercel'] },
+        { icon: <FcTreeStructure />, name: 'Data Structure', items: ['C++', 'Opps','STL', 'Problem  solving'] },
+        
+      ];
 
   const qualifications = [
     {
@@ -84,7 +86,7 @@ const Home: React.FC = () => {
                 <a href="https://github.com" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-blue-400 transition-colors">
                   <FaGithub className="h-7 w-7" />
                 </a>
-                <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-blue-400 transition-colors">
+                <a href="https://www.linkedin.com/in/dhiraj-kumar-tiwari-4443362a9/" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-blue-400 transition-colors">
                   <FaLinkedin className="h-7 w-7" />
                 </a>
                 <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-blue-400 transition-colors">
@@ -141,7 +143,7 @@ const Home: React.FC = () => {
                 <div className="text-blue-600 mb-4 text-4xl">
                   {skill.icon}
                 </div>
-                <h3 className="text-xl font-bold mb-4">{skill.name} Development</h3>
+                <h3 className="text-xl font-bold mb-4">{skill.name} </h3>
                 <ul className="space-y-2">
                   {skill.items.map((item, i) => (
                     <li key={i} className="flex items-center">
