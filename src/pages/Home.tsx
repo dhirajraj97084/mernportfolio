@@ -83,7 +83,7 @@ const Home: React.FC = () => {
               </div>
 
               <div className="flex space-x-6 justify-center lg:justify-start">
-                <a href="https://github.com" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-blue-400 transition-colors">
+                <a href="https://github.com/dhirajraj97084" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-blue-400 transition-colors">
                   <FaGithub className="h-7 w-7" />
                 </a>
                 <a href="https://www.linkedin.com/in/dhiraj-kumar-tiwari-4443362a9/" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-blue-400 transition-colors">
