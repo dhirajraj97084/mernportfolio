@@ -34,12 +34,12 @@ const Projects: React.FC = () => {
     },
     {
       id: 3,
-      title: "Task Management API",
-      description: "RESTful API for task management with authentication and authorization.",
-      image: "https://via.placeholder.com/600x400?text=API+Project",
-      technologies: ["Node.js", "Express", "MongoDB", "JWT"],
-      github: "https://github.com",
-      demo: "https://example.com"
+      title: "E-Bharat ",
+      description: "Discover amazing products at unbeatable prices. From fashion to electronics, we have everything you need delivered right to your doorstep.",
+      image: "/images/ebharat.png",
+      technologies: ["React", "Tailwindcss", "Material UI", "Firebase","Redux Tool Kit"],
+      github: "https://github.com/dhirajraj97084/E-Bharat--",
+      demo: "https://e-bharat-vert.vercel.app/"
     }
   ];
 
